@@ -1,0 +1,1 @@
+# SVSoC_smallNPU
