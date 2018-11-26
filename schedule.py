@@ -157,8 +157,9 @@ def laschdule(Ebudget,Ea,Eb,Ec,Ed,Ee,La,Lb,Lc,Ld,Le,k):
 	return pk,ft
 
 def main():
-	pk,ft = laschdule(400,6,69,58,319,8,135,186,231,565,270,4)
-	print pk
+	pk,ft = laschdule(500,11,134,114,319,11,344,619,743,1000,344,10)
+	print sum(ft)
+
 
 if __name__ == '__main__':
 	main()
