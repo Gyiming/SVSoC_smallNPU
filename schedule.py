@@ -1,7 +1,8 @@
 from __future__ import with_statement
 import os
 import random
-import numpy as np 
+import numpy as np
+import time 
 
 def check(i,Ebudget,Ea,Eb,Ec,Ed,Ee,aenable,benable,cenable,denable,eenable,k):
 	aenable=1
@@ -157,8 +158,11 @@ def laschdule(Ebudget,Ea,Eb,Ec,Ed,Ee,La,Lb,Lc,Ld,Le,k):
 	return pk,ft
 
 def main():
+	start = time.time()
 	pk,ft = laschdule(500,11,134,114,319,11,344,619,743,1000,344,10)
-	print sum(ft)
+	end = time.time()
+	print(end-start)
+	#print sum(ft)
 
 
 if __name__ == '__main__':
